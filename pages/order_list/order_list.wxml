@@ -1,0 +1,130 @@
+<!--pages/order_list/order_list.wxml-->
+<view class="list_left">
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+  <text>海鲜</text>
+</view>
+<view class="list_right">
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+  <view class="list_area">
+    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
+    <text class="area_2">68元/份</text>
+    <text class="area_3">店长推荐</text>
+    <text class="area_4">21</text>
+  </view>
+
+</view>
+
+
+<view class="nav_bottom">
+  <image class="fo_img" src="http://img.bdvip.net/wxsmprogram/102px_102px_icon.png"></image>
+  <text class="or_num">32</text>
+  <text class="fo_num">￥0.00</text>
+  <text class="fo_sub" bindtap="showModal">提交订单</text>
+</view>
+
+
+
+<view class="modal_mask"></view>
+<view class="modal_or">
+  <view class="modal_head">
+    <view class="modal_left">已选产品</view>
+    <view class="modal_right">
+      <image class="ri_img" src="http://img.bdvip.net/wxsmprogram/28px_30px_icon.png"></image>
+      <text class="ri_text">清空购物车</text>
+    </view>
+  </view>
+  <view class="modal_body">
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+      
+    </view>
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+      
+    </view>
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+      
+    </view>
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+      
+    </view>
+
+  </view>
+
+</view>

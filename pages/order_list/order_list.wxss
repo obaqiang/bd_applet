@@ -1,0 +1,224 @@
+/* pages/order_list/order_list.wxss */
+
+.list_left {
+  width: 25%;
+  float: left;
+  background: #f2f2f2;
+  position: relative;
+  height: 1000rpx;
+  overflow-y: scroll;
+}
+
+.list_left text {
+  background: #dedae5;
+  display: block;
+  text-align: center;
+  border-bottom: 1rpx solid #fff;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+
+.list_right {
+  margin-left: 25%;
+  width: 75%;
+  float: left;
+  position: fixed;
+  overflow-y: scroll;
+  height: 1000rpx;
+}
+
+.list_area {
+  border-bottom: 1rpx solid #ddd;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.img_1 {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 10rpx;
+  border-radius: 10rpx;
+}
+
+.img_2 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 140rpx;
+  bottom: 20rpx;
+}
+
+.img_3 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+
+.area_1 {
+  position: absolute;
+  top: 20rpx;
+  font-size: 30rpx;
+  width: 240rpx;
+}
+
+.area_2 {
+  position: absolute;
+  font-size: 30rpx;
+  top: 20rpx;
+  right: 40rpx;
+  color: #ffba00;
+}
+
+.area_3 {
+  position: absolute;
+  font-size: 30rpx;
+  color: #cb2920;
+  top: 110rpx;
+}
+
+.area_4 {
+  position: absolute;
+  font-size: 30rpx;
+  top: 110rpx;
+  right: 90rpx;
+}
+
+.nav_bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fo_img {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  left: 10rpx;
+  bottom: 10rpx;
+
+}
+
+.fo_num {
+  margin-left: 140rpx;
+  font-size: 40rpx;
+  color: #cb2920;
+  line-height: 100rpx;
+}
+
+.fo_sub {
+  float: right;
+  font-size: 40rpx;
+  color: #fff;
+  line-height: 100rpx;
+  background: #cb2920;
+  width: 200rpx;
+  text-align: center;
+}
+
+.or_num {
+  position: absolute;
+  top: -10rpx;
+  left: 75rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+
+
+.head_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.modal_or {
+  position: fixed;
+  width: 100%;
+  bottom: 110rpx;
+  background: #fff;
+  z-index: 2;
+}
+.modal_body{
+  overflow-y: scroll;
+  height: 390rpx;
+  
+}
+.modal_mask {
+  background: #000;
+  opacity: 0.2;
+  height: 1000rpx;
+  width: 100%;
+}
+
+.ri_img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.modal_head {
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #f5f3f2;
+}
+
+.modal_left {
+  float: left;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.modal_right {
+  float: right;
+  font-size: 25rpx;
+  margin-right: 20rpx;
+  color: #999999;
+}
+
+.ri_img {
+  margin-right: 20rpx;
+}
+
+.goods_list{
+  overflow: hidden;
+  position: relative;
+  height: 140rpx;
+  font-size: 30rpx;
+}
+.list_1{
+  position: absolute;
+  top:20rpx;
+  left: 20rpx;
+  
+}
+.list_2{
+  position: absolute;
+  top:90rpx;
+  left: 20rpx;
+  color: #999999;
+}
+.list_3{
+  position: absolute;
+  top:37rpx;
+  right: 200rpx;
+}
+.list_4{
+  position: absolute;
+  top:37rpx;
+  right: 83rpx;
+}
+.list_5{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top:30rpx;
+  right: 120rpx;
+}
+.list_6{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top:30rpx;
+  right: 20rpx;
+}

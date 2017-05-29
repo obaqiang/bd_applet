@@ -1,0 +1,49 @@
+<!--pages/order_card/order_card.wxml-->
+<view class="card_area">
+  <image class="bg_card" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+  <image class="bg_icon" src="http://img.bdvip.net/wxsmprogram/80px_80px_logo.png"></image>
+  <image class="bg_qr" src="http://img.bdvip.net/wxsmprogram/42px_42px_erweima.png"></image>
+  <text class="shop_name">麦田香草</text>
+  <text class="shop_type">会员卡</text>
+  <text class="card_num">4564564654564654564</text>
+</view>
+<view class="info_area">
+  <image src="http://img.bdvip.net/wxsmprogram/30px_18px_huiyuanka.png"></image>
+  <text class="info_area_text">会员卡</text>
+  <button wx:if="{{hascard==false}}" class="btn_get">领取</button>
+  <text wx:if="{{hascard==true}}" class="see_card">查看</text>
+</view>
+
+
+<view class="list_nav">
+  <view class="icon_1">
+    <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon1.png"></image>
+    <text>全部订单</text>
+  </view>
+  <view class="icon_1">
+    <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon2.png"></image>
+    <text>待付款</text>
+  </view>
+  <view class="icon_1">
+    <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon3.png"></image>
+    <text>未完成</text>
+  </view>
+  <view class="icon_1">
+    <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon4.png"></image>
+    <text>已完成</text>
+  </view>
+</view>
+
+
+<view class="card_list list_head">
+  <text class="list_de">会员卡详情</text>
+  <image class="list_img" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+</view>
+<view class="card_list ">
+  <text class="list_de">我的二维码</text>
+  <image class="list_img" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+</view>
+<!--<view class="card_list ">
+  <text class="list_de">试用门店</text>
+  <image class="list_img" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+</view>-->

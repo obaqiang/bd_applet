@@ -1,0 +1,33 @@
+<!--pages/my_order/my_order.wxml-->
+<view class="list_head">
+  <text class="list_body on">全部订单</text>
+  <text class="list_body">待付款</text>
+  <text class="list_body">未完成</text>
+  <text class="list_body">已完成</text>
+</view>
+
+
+<view class="list_area">
+  <text class="area_1">2017-45-45 15:21</text>
+  <text class="area_2">已完成</text>
+  <image class="area_icon" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+  <text class="area_3">共3件商品</text>
+  <text class="area_4">合计:</text>
+  <text class="area_5">￥204.00</text>
+</view>
+<view class="list_area">
+  <text class="area_1">2017-45-45 15:21</text>
+  <text class="area_2">已完成</text>
+  <image class="area_icon" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+  <text class="area_3">共3件商品</text>
+  <text class="area_4">合计:</text>
+  <text class="area_5">￥204.00</text>
+</view>
+<view class="list_area">
+  <text class="area_1">2017-45-45 15:21</text>
+  <text class="area_2">已完成</text>
+  <image class="area_icon" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
+  <text class="area_3">共3件商品</text>
+  <text class="area_4">合计:</text>
+  <text class="area_5">￥204.00</text>
+</view>

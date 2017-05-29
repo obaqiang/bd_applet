@@ -1,0 +1,95 @@
+/* pages/order_see/order_see.wxss */
+@import '../order_list/order_list.wxss';
+
+.area_5 {
+  position: absolute;
+  top: 20rpx;
+  right: 220rpx;
+  font-size: 30rpx;
+  color: #9a9a9a;
+}
+
+.area_6 {
+  position: absolute;
+  bottom: 30rpx;
+  right: 40rpx;
+  font-size: 30rpx;
+}
+
+page {
+  background: #f0f0f2;
+}
+
+.info_area {
+  background: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.shop_icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.shop_icon {
+  margin: 30rpx;
+}
+
+.shop_name {
+  position: absolute;
+  top: 80rpx;
+  left: 160rpx;
+}
+
+.shop_1 {
+  padding: 10rpx 20rpx;
+}
+
+.shop_head {
+  color: #9da1a3;
+  font-size: 30rpx;
+}
+
+.shop_body {
+  font-size: 30rpx;
+}
+
+.shop_cb {
+  font-size: 30rpx;
+  color: #cb2920;
+}
+
+.bot_1 {
+  color: #cb2920;
+  font-size: 30rpx;
+}
+
+.bot_2 {
+  color: #cb2920;
+}
+
+.bot_3 {
+  color: #fff;
+  background: #ffba00;
+  float: right;
+  height: 100rpx;
+  width: 210rpx;
+  text-align: center;
+}
+
+.bot_4 {
+  color: #fff;
+  background: #cb2920;
+  float: right;
+  width: 210rpx;
+  text-align: center;
+}
+
+.nav_bot {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+}
