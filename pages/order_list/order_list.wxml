@@ -1,130 +1,120 @@
 <!--pages/order_list/order_list.wxml-->
-<view class="list_left">
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
-  <text>海鲜</text>
+<view class="list_left" >
+  <text bindtap="classCho" wx:for="{{classlistdata}}" data-classid="{{item.id}}">{{item.class_name}}</text>
 </view>
+
 <view class="list_right">
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
-  </view>
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
-  </view>
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
-  </view>
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
-  </view>
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
-  </view>
-  <view class="list_area">
-    <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
-    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-    <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-    <text class="area_2">68元/份</text>
-    <text class="area_3">店长推荐</text>
-    <text class="area_4">21</text>
+  <view class="list_area" wx:for="{{goodsdata}}" wx:if="{{choose_id==item.class_id}}">
+    <image class="img_1" src="{{item.thumb}}"></image>
+    <image class="img_2" bindtap="orMin" data-index="{{item.index}}" data-goods_id= "{{item.id}}" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" bindtap="orPlus" data-index="{{item.index}}" data-goods_id= "{{item.id}}" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">{{item.goods_name}}</text>
+    <text class="area_2">{{item.goods_price}}元/{{item.unit_name}}</text>
+    <text class="area_3"></text>
+    <text class="area_4">{{item.num}}</text>
   </view>
 
 </view>
+<!--<view class="list_right">
+  <view class="list_area">
+    <image class="img_1" src="{{item.thumb}}"></image>
+    <image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+    <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    <text class="area_1">23432423</text>
+    <text class="area_2">123/见</text>
+    <text class="area_3"></text>
+    <text class="area_4">0</text>
+  </view>
+
+</view>-->
 
 
 <view class="nav_bottom">
-  <image class="fo_img" src="http://img.bdvip.net/wxsmprogram/102px_102px_icon.png"></image>
-  <text class="or_num">32</text>
-  <text class="fo_num">￥0.00</text>
-  <text class="fo_sub" bindtap="showModal">提交订单</text>
+  <image class="fo_img" bindtap="showModal" src="http://img.bdvip.net/wxsmprogram/102px_102px_icon.png"></image>
+  <text class="or_num">{{or_num}}</text>
+  <text class="fo_num">￥{{total_money}}</text>
+  <text class="{{order_pick!=''?'fo_sub':'fo_sub_no'}}" bindtap="subOrder">提交订单</text>
 </view>
 
 
 
-<view class="modal_mask"></view>
-<view class="modal_or">
+<view class="modal_mask" bindtap="hideModal" hidden="{{modal_status}}"></view>
+<view class="modal_or" hidden="{{modal_status}}">
   <view class="modal_head">
     <view class="modal_left">已选产品</view>
     <view class="modal_right">
       <image class="ri_img" src="http://img.bdvip.net/wxsmprogram/28px_30px_icon.png"></image>
-      <text class="ri_text">清空购物车</text>
+      <text class="ri_text" bindtap="clearPick">清空购物车</text>
     </view>
   </view>
-  <view class="modal_body">
-    <view class="goods_list">
+  <view class="modal_body" >
+    <view class="goods_list" wx:for="{{order_pick}}">
+      <text class="list_1">{{item.goods_name}}</text>
+      <text class="list_2"></text>
+      <text class="list_3">￥{{item.money}}</text>
+      <text class="list_4">{{item.num}}</text>
+      <image class="list_5" bindtap="orMin" data-index="{{item.index}}" data-goods_id= "{{item.id}}" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" bindtap="orPlus" data-index="{{item.index}}" data-goods_id= "{{item.id}}" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    </view>
+    <!--<view class="goods_list">
       <text class="list_1">椒盐皮皮虾</text>
       <text class="list_2">重辣</text>
       <text class="list_3">￥63.00</text>
       <text class="list_4">11</text>
       <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
       <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-      
-    </view>
-    <view class="goods_list">
-      <text class="list_1">椒盐皮皮虾</text>
-      <text class="list_2">重辣</text>
-      <text class="list_3">￥63.00</text>
-      <text class="list_4">11</text>
-      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-      
-    </view>
-    <view class="goods_list">
-      <text class="list_1">椒盐皮皮虾</text>
-      <text class="list_2">重辣</text>
-      <text class="list_3">￥63.00</text>
-      <text class="list_4">11</text>
-      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-      
-    </view>
-    <view class="goods_list">
-      <text class="list_1">椒盐皮皮虾</text>
-      <text class="list_2">重辣</text>
-      <text class="list_3">￥63.00</text>
-      <text class="list_4">11</text>
-      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
-      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
-      
-    </view>
 
+    </view>
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+
+    </view>
+    <view class="goods_list">
+      <text class="list_1">椒盐皮皮虾</text>
+      <text class="list_2">重辣</text>
+      <text class="list_3">￥63.00</text>
+      <text class="list_4">11</text>
+      <image class="list_5" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
+      <image class="list_6" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>
+    </view>-->
   </view>
-
 </view>
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>
+
+
+<!--<view class="modal_mask_2" hidden="modal_status_2"></view>-->
+
+<!--<view class="modal_or_2" hidden="modal_status_2">
+  <view class="modal_or_2_head">
+    椒盐皮皮虾
+  </view>
+  <view class="modal_or_2_body">
+    <view class="mo_2_b_head">请选择口味</view>
+    <view class="mo_2_b_body">
+      <view class="mo_2_list">不辣</view>
+      <view class="mo_2_list">不辣</view>
+      <view class="mo_2_list">不辣</view>
+      <view class="mo_2_list">不辣</view>
+      <view class="mo_2_list">不辣</view>
+    </view>
+    <view class="mo_2_b_foot">
+      <view class="taste_info">
+        <text class="taste_price">￥68</text>
+        <text class="taste_cho">（重辣）</text>
+      </view>
+      <button class="btn_mo_2">确定</button>
+
+    </view>
+
+
+  </view>
+</view>-->

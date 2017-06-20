@@ -12,7 +12,7 @@
 .area_6 {
   position: absolute;
   bottom: 30rpx;
-  right: 40rpx;
+  right: 50rpx;
   font-size: 30rpx;
 }
 
@@ -84,6 +84,14 @@ page {
   width: 210rpx;
   text-align: center;
 }
+.bot_5 {
+  color: #fff;
+  background: #999999;
+  float: right;
+  width: 210rpx;
+  text-align: center;
+}
+
 
 .nav_bot {
   width: 100%;

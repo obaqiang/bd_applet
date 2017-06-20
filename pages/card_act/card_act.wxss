@@ -67,6 +67,11 @@ page {
   font-size: 30rpx;
 
 }
-.btn_ver:hover{
+.btn_ver_hover{
   background: #ddd;
+  position: absolute;
+  color: #fff;
+  top: 10rpx;
+  right: 0;
+  font-size: 30rpx;
 }

@@ -1,4 +1,4 @@
-<!--pages/order_card/order_card.wxml-->
+
 <view class="card_area">
   <image class="bg_card" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
   <image class="bg_icon" src="{{getvipinfo_data.Store.logo_img}}"></image>
@@ -15,7 +15,7 @@
 </view>-->
 
 
-<view class="list_nav">
+<!--<view class="list_nav">
   <view class="icon_1" data-status="one" bindtap="seeOrderJump">
     <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon1.png"></image>
     <text>全部订单</text>
@@ -32,7 +32,7 @@
     <image src="http://img.bdvip.net/wxsmprogram/36px_36px_icon4.png"></image>
     <text>已完成</text>
   </view>
-</view>
+</view>-->
 
 
 <view class="card_list list_head" bindtap="cardJump">
@@ -47,3 +47,5 @@
   <text class="list_de">试用门店</text>
   <image class="list_img" src="http://img.bdvip.net/wxsmprogram/15px_24px_c.png"></image>
 </view>-->
+
+

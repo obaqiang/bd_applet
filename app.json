@@ -1,13 +1,15 @@
 {
   "pages": [
-
+    
     "pages/order_home/order_home",
     "pages/order_card/order_card",
     "pages/card_detail/card_detail",
     "pages/order_list/order_list",
     "pages/order_see/order_see",
+    "pages/card/card",
     "pages/my_order/my_order",
-    "pages/card_act/card_act"
+    "pages/card_act/card_act",
+    "pages/barcode/barcode"
   ],
   "tabBar": {
     "color": "#a9b7b7",

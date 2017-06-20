@@ -1,4 +1,4 @@
-// pages/card_detail/card_detail.js
+
 var app = getApp();
 var util = require('../../utils/util.js');
 Page({
@@ -7,48 +7,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-    descrition:'',
-    opentime:'',
-    preprogative:'',
-    storetel:''
+    
+    cardcode: '',
+    getvipinfo_data: '',
+
+    img_url:''
   },
 
-
-  GetCardDetails: function (storeid) {
-    var that = this;
-    wx.request({
-      url: app.globalData.bd_url + '/api/WxSP/GetCardDetails',
-      data: {
-        storeid: storeid,
-      },
-      method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        console.log(res)
-        that.setData({
-          descrition: res.data.Data.descrition,
-          opentime: res.data.Data.opentime,
-          prerogative: res.data.Data.prerogative,
-          storetel: res.data.Data.storetel,
-        })
-      },
-      fail: function (res) {
-        console.log('提交GetCardDetails接口返回失败');
-        
-      }
+  cardJump: function () {
+    wx.navigateTo({
+      url: '../card_detail/card_detail'
     })
   },
 
+  seeCode: function () {
+    var that = this
+    that.setData({
+      hidden: false
+    })
+  },
+
+  seeCodeJump: function () {
+    wx.navigateTo({
+      url: '../barcode/barcode'
+    })
+  },
+
+  
+
+  
 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // console.log(app.globalData.loginfo);
     var that = this
-    that.GetCardDetails(app.globalData.storeid)
+    var cardcode = options.cardcode
+    
+    that.setData({
+      cardcode: cardcode,
+      getvipinfo_data: app.globalData.getvipinfo_data
+    })
+
   },
 
   /**

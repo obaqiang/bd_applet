@@ -2,46 +2,47 @@
 
 <view class="info_area">
   <image class="shop_icon" src="http://img.bdvip.net/wxsmprogram/80px_80px_logo.png"></image>
-  <text class="shop_name">麦田香草</text>
+  <text class="shop_name">{{store_name}}</text>
 
   <view class="shop_1">
     <text class="shop_head">创建时间:</text>
-    <text class="shop_body">2017-78-45 14:18</text>
+    <text class="shop_body">{{currentdate}}</text>
   </view>
   <view class="shop_1">
     <text class="shop_head">订单数量:</text>
-    <text class="shop_body">4</text>
+    <text class="shop_body">{{total_amount}}</text>
   </view>
   <view class="shop_1">
     <text class="shop_head">订单号:</text>
-    <text class="shop_body">1231564132156456</text>
+    <text class="shop_body">{{order_id}}</text>
   </view>
   <view class="shop_1">
     <text class="shop_head">取货单号:</text>
-    <text class="shop_cb">2132132123123132（未完成）</text>
+    <text class="shop_cb">{{send_no}}</text>
   </view>
 
 </view>
 
 
 
-<view class="list_area">
-  <image class="img_1" src="http://img.bdvip.net/wxsmprogram/622px_374px_ka.png"></image>
+<view class="list_area" wx:for="{{orderitems}}">
+  <image class="img_1" src="{{item.thumb}}"></image>
   <!--<image class="img_2" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon1.png"></image>
   <image class="img_3" src="http://img.bdvip.net/wxsmprogram/50px_50px_icon2.png"></image>-->
-  <text class="area_1">椒盐皮受虾32发射点士大夫34</text>
-  <text class="area_2">68元/份</text>
-  <text class="area_3">店长推荐</text>
+  <text class="area_1">{{item.goods_name}}</text>
+  <text class="area_2">{{item.real_price}}/{{item.unit_name}}</text>
+  <text class="area_3"></text>
   
-  <text class="area_5">（中辣）</text>
-  <text class="area_6">21</text>
+  <text class="area_5"></text>
+  <text class="area_6">{{item.qty}}</text>
 </view>
 
 
 <view class="nav_bot">
   <text class="bot_1">实付金额:</text>
-  <text class="bot_2">￥2422.00</text>
+  <text class="bot_2">￥{{amount_payed}}</text>
   
-  <text class="bot_4">确认支付</text>
-  <text class="bot_3">取消订单</text>
+  <text wx:if="{{pay_ok==false}}" class="bot_4" bindtap="surePay">确认支付</text>
+  <!--<text wx:if="{{pay_ok==false}}" class="bot_3" bindtap="cancelPay">取消订单</text>-->
+  <text wx:if="{{pay_ok==true}}" class="bot_5" bindtap="cancelPay">已付款</text>
 </view>

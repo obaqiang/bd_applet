@@ -16,6 +16,11 @@
   border-bottom: 1rpx solid #fff;
   line-height: 80rpx;
   font-size: 30rpx;
+  
+}
+
+.list_left text:hover {
+  background: #fff;
 }
 
 .list_right {
@@ -98,7 +103,6 @@
   height: 100rpx;
   left: 10rpx;
   bottom: 10rpx;
-
 }
 
 .fo_num {
@@ -118,15 +122,23 @@
   text-align: center;
 }
 
+.fo_sub_no {
+  float: right;
+  font-size: 40rpx;
+  color: #fff;
+  line-height: 100rpx;
+  background: #f5f5f5;
+  width: 200rpx;
+  text-align: center;
+}
+
 .or_num {
   position: absolute;
-  top: -10rpx;
-  left: 75rpx;
+  top: -15rpx;
+  left: 85rpx;
   color: #fff;
   font-size: 30rpx;
 }
-
-
 
 .head_img {
   width: 50rpx;
@@ -140,15 +152,93 @@
   background: #fff;
   z-index: 2;
 }
-.modal_body{
+
+.modal_or_2 {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  bottom: 480rpx;
+  background: #fff;
+  z-index: 2;
+  border-radius: 20rpx;
+}
+
+.modal_or_2_head {
+  text-align: center;
+  margin-top: 50rpx;
+  font-size: 40rpx;
+  color: #666;
+}
+
+.mo_2_b_head {
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  margin-top: 40rpx;
+  color: #666;
+}
+
+.mo_2_b_body {
+  margin-top: 20rpx;
+  padding-left: 40rpx;
+  /*padding-right: 30rpx;*/
+}
+
+.mo_2_list {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: #666;
+  border: 1rpx solid #666;
+  border-radius: 10rpx;
+  margin: 10rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.mo_2_b_foot {
+  background: #f5f5f5;
+  position: relative;
+  margin-top: 30rpx;
+  border-radius: 0 0 20rpx 20rpx;
+}
+
+.btn_mo_2 {
+  font-size: 30rpx;
+  background: #d43f3a;
+  color: #fff;
+  line-height: 30rpx;
+  padding: 20rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 30rpx;
+}
+
+.taste_price {
+  font-size: 60rpx;
+  color: #cb2920;
+  line-height: 130rpx;
+  margin-left: 20rpx;
+}
+
+.taste_cho {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.modal_body {
   overflow-y: scroll;
   height: 390rpx;
-  
 }
+
 .modal_mask {
   background: #000;
   opacity: 0.2;
   height: 1000rpx;
+  width: 100%;
+}
+
+.modal_mask_2 {
+  background: #000;
+  opacity: 0.2;
+  height: 1200rpx;
   width: 100%;
 }
 
@@ -173,52 +263,57 @@
   float: right;
   font-size: 25rpx;
   margin-right: 20rpx;
-  color: #999999;
+  color: #999;
 }
 
 .ri_img {
   margin-right: 20rpx;
 }
 
-.goods_list{
+.goods_list {
   overflow: hidden;
   position: relative;
   height: 140rpx;
   font-size: 30rpx;
 }
-.list_1{
+
+.list_1 {
   position: absolute;
-  top:20rpx;
+  top: 20rpx;
   left: 20rpx;
-  
 }
-.list_2{
+
+.list_2 {
   position: absolute;
-  top:90rpx;
+  top: 90rpx;
   left: 20rpx;
-  color: #999999;
+  color: #999;
 }
-.list_3{
+
+.list_3 {
   position: absolute;
-  top:37rpx;
+  top: 37rpx;
   right: 200rpx;
 }
-.list_4{
+
+.list_4 {
   position: absolute;
-  top:37rpx;
+  top: 37rpx;
   right: 83rpx;
 }
-.list_5{
+
+.list_5 {
   width: 50rpx;
   height: 50rpx;
   position: absolute;
-  top:30rpx;
+  top: 30rpx;
   right: 120rpx;
 }
-.list_6{
+
+.list_6 {
   width: 50rpx;
   height: 50rpx;
   position: absolute;
-  top:30rpx;
+  top: 30rpx;
   right: 20rpx;
 }

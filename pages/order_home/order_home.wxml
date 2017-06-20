@@ -1,36 +1,37 @@
 <!--pages/order_home/order_home.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{getvipinfo_data.Images}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="" />
+      <image src="{{item.image_url}}" class="slide-image" width="355" height="" />
     </swiper-item>
   </block>
 </swiper>
 <view class="info_area">
   <image src="http://img.bdvip.net/wxsmprogram/30px_18px_huiyuanka.png"></image>
   <text class="info_area_text">会员卡</text>
-  <button wx:if="{{hascard==false}}" bindtap="getCard" class="btn_get">领取</button>
-  <text wx:if="{{hascard==true}}" bindtap="seeCard" class="see_card">查看</text>
+  <button wx:if="{{hascard==false&&hasgetcard==false}}" bindtap="getCardact" class="btn_get">领取</button>
+  <text wx:if="{{hascard==true&&hasgetcard==true}}" bindtap="seeCard" class="see_card">查看</text>
+  <text wx:if="{{hasgetcard==false&&hascard==true}}" bindtap="activeCard" class="see_card">激活</text>
 </view>
 
 <view class="shop_info">
-  <image class="shop_icon" src="http://img.bdvip.net/wxsmprogram/80px_80px_logo.png"></image>
-  <text class="shop_name">麦田仙草</text>
-  <text class="shop_location">城北路5号科技产业园</text>
+  <image class="shop_icon" src="{{getvipinfo_data.Store.logo_img}}"></image>
+  <text class="shop_name">{{getvipinfo_data.Store.store_name}}</text>
+  <text class="shop_location">{{getvipinfo_data.Store.address}}</text>
   <image class="shop_phone" bindtap="Tel" src="http://img.bdvip.net/wxsmprogram/48px_56px_dianhua.png"></image>
 </view>
 
 <view class="shop_type">
   <image class="type_icon" src="http://img.bdvip.net/wxsmprogram/38px_40px_icon.png"></image>
   <text class="type_head">行业类型</text>
-  <text class="type_name"> 餐饮零食 </text>
+  <text class="type_name"> {{getvipinfo_data.Store.class_name}} </text>
 </view>
 
 
 <view class="shop_type">
   <image class="type_icon" src="http://img.bdvip.net/wxsmprogram/38px_40px_icon2.png"></image>
   <text class="type_head">商家简介</text>
-  <text class="intro_area"> 牛逼不是吹的，你不知道我们的店就打算看了就ask的理解啊adsl空间哦 </text>
+  <text class="intro_area"> {{getvipinfo_data.Store.brand_desc}} </text>
 </view>
 
 <view class="shop_swiper">
@@ -40,8 +41,14 @@
   </view>
 
   <scroll-view class="recommend_scroll_x_box" scroll-x="true">
-    <view class="recommend_hot_box" wx:for="{{hotList}}">
-      <image src="{{item.pic}}" class="recommend_hot_image"></image>
+    <view class="recommend_hot_box" wx:for="{{getvipinfo_data.Images}}">
+      <image src="{{item.image_url}}" class="recommend_hot_image"></image>
     </view>
   </scroll-view>
+</view>
+
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
 </view>

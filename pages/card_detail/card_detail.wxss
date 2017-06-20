@@ -34,7 +34,10 @@ page {
   top: 25rpx;
   left: 150rpx;
 }
-
+.info_t{
+  color: #777777;
+  margin-left: 20rpx;
+}
 .type_area {
 
   line-height: 100rpx;
@@ -52,6 +55,7 @@ page {
 }
 .card{
   margin-left: 100rpx;
+  color: #777777;
 }
 .btn_sure{
   background: #04BE02;
